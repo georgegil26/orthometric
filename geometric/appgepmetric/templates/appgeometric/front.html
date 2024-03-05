@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Medición por Cámara</title>
+    <link rel="stylesheet" href="{% static 'appgeometric/css/styles.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="card custom-card">
+            <button id="reward-btn" class="btn-back">Atrás</button>
+    
+            <div id="header-image">
+                <img src="{% static 'images/logo2a.png' %}" alt="Logo">
+            </div>
+            <br>
+            <br>
+            <br>
+    
+            <h1>Determina la cantidad de alineadores</h1>
+            
+            <!-- Contenedor para la captura de imagen por cámara -->
+            <div id="camera-container">
+                <video id="camera-stream" autoplay></video>
+                <canvas id="capture-canvas"></canvas>
+            </div>
+    
+            <!-- Controles para capturar desde la cámara -->
+            <div id="camera-controls">
+                <button id="capture-btn" class="btn-custom">Capturar</button>
+            </div>
+    
+            <!-- Botones de herramientas adicionales -->
+            <section id="tools-section">
+                <h2>Herramientas</h2>
+                <button id="place-points-btn" class="btn-custom">Colocar Puntos</button>
+                <button id="scale-mode-btn" class="btn-custom">Escalar</button> <!-- Botón para iniciar el modo de escala -->                 
+                <button id="measure-distance-btn" class="btn-custom">Medir Distancia</button>
+                <button id="measure-angle-btn" class="btn-custom">Medir Ángulo</button>
+                <button id="clear-btn" class="btn-custom">Borrar</button>                
+                <select id="listaDeCamaras" class="select-custom"></select>
+                <button id="iniciarCamara" class="btn-custom">Iniciar Cámara</button>
+            </section>
+
+        <!-- Sección para mostrar los resultados de las mediciones -->
+        <section id="measurement-results">
+            <h2>Resultados de Medición</h2>
+            <!-- Ejemplo de tabla para mostrar resultados -->
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Valor</th>
+                        <th>Pet-G</th>
+                        <th>TPU</th>
+                        <th>Print</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Distancia</td>
+                        <td id="distance-value">--</td>
+                        <td id="distance-petg">--</td>
+                        <td id="distance-tpu">--</td>
+                        <td id="distance-print">--</td>
+                    </tr>
+                    <tr>
+                        <td>Ángulo</td>
+                        <td id="angle-value">--</td>
+                        <td id="angle-petg">--</td>
+                        <td id="angle-tpu">--</td>
+                        <td id="angle-print">--</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+
+   
+    <script src="{% static 'appgeometric/js/medcam.js' %}"></script>
+</body>
+</html>

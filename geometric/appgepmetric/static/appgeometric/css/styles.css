@@ -1,0 +1,169 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f7f8f8; /* Un azul muy claro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+.card {
+    background-color: #b0e7fd;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    max-width: 500px; /* Ajusta esto al tamaño deseado */
+}
+
+#header-image {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente el contenido */
+    align-items: center; /* Centra verticalmente el contenido, útil si el contenedor tiene altura definida */
+    text-align: center; /* Centra elementos en línea o en línea-bloque dentro del contenedor */
+}
+
+#header-image img {
+    display: block; /* Asegúrate de que el logo se trate como un bloque */
+    margin: 0 auto; /* Aplica un margen automático a los lados para centrar */
+    width: 350%; /* O el ancho fijo que encontraste adecuado */
+    max-width: 700px; /* O tu valor deseado */
+    height: auto; /* Para mantener la proporción del logo */
+}
+
+/* Resto de tu CSS... */
+
+
+h1 {
+    color: #333;
+    font-size: 2.5em;
+    margin-top: 0; /* Elimina el margen superior para que el título esté más cerca del logo */
+}
+
+h2 {
+    color: #555;
+    margin: 20px 0;
+    font-size: 1.5em;
+}
+
+.btn {
+    background-color: #042447;
+    color: #ffffff;
+    border: none;
+    padding: 15px 30px;
+    margin: 10px;
+    border-radius: 50px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+.divider {
+    color: #999;
+    margin: 20px;
+}
+
+#reward-btn {
+    position: fixed; /* Cambia a 'absolute' si deseas que se mueva con el scroll */
+    top: 0;
+    left: 0;
+    margin: 10px; /* Ajusta el margen para no estar exactamente en la esquina */
+    z-index: 1000; /* Asegura que el botón esté por encima de otros elementos */
+    padding: 10px 20px; /* Ajusta el relleno según sea necesario */
+    font-size: 1em; /* Ajusta el tamaño de fuente según sea necesario */
+    background-color: #042447; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none; /* Elimina el borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor de puntero para indicar que es clickeable */
+}
+
+.custom-card {
+    background-color: #b0e7fd;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 150, 0.2);
+    margin-top: 20px;
+    width: 90%; /* Ajusta el ancho de la card */
+    max-width: 800px; /* Ajusta el ancho máximo para que no sea demasiado grande en pantallas grandes */
+    margin-left: auto; /* Centra la card horizontalmente */
+    margin-right: auto; /* Centra la card horizontalmente */
+    min-height: 200px;
+}
+
+
+.btn-custom {
+    background-color: #042447; /* Un azul estándar */
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-custom:hover {
+    background-color: #0056b3; /* Un azul más oscuro al pasar el ratón */
+}
+
+.btn-back {
+    background-color: #0056b3; /* Azul para el botón de Atrás */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.select-custom {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid #042447;
+}
+
+#camera-container {
+    border: 2px solid #042447;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 15px;
+}
+
+.results-table {
+    margin-top: 15px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.results-table th, .results-table td {
+    border: 1px solid #007bff;
+    padding: 8px;
+    text-align: left;
+}
+
+.results-table th {
+    background-color: #007bff;
+    color: white;
+}

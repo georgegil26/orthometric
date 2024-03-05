@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas con Imagen de Fondo</title>
+    <link rel="stylesheet" href="{% static 'appgeometric/css/styles.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div id="header-image">
+                <img src="{% static 'images/logo2a.png' %}" alt="Logo">
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h1>Bienvenido</h1>
+            <h2>¿Qué desea hacer?</h2>
+            <button id="upload-image-btn" class="btn">Imagen</button>            
+            <button id="capture-camera-btn" class="btn">Cámara</button>
+        </div>
+    </div>
+
+    <!-- Asegúrate de tener los demás templates aquí... -->
+
+    
+    <script src="{% static 'appgeometric/js/capture.js' %}"></script>
+    <script src="{% static 'appgeometric/js/medicion.js' %}"></script>
+</body>
+</html>
